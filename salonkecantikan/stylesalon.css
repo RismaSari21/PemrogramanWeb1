@@ -241,6 +241,9 @@ footer {
   padding-top: 20px;
   font-size: 0.9rem;
 }
+.footer-bottom a {
+  color: #c52260;
+}
 
 @media (max-width: 768px) {
   .hero h1 {
