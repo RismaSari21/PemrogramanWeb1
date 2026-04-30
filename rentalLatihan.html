@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Header dan Navbar</title>
+
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #ca839e;
+    }
+    header {
+        background-color: pink;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2px;
+        border-bottom: 2px solid  #c52260;
+
+    }
+    .logo-text {
+color: #c52260;
+    }
+
+    .logo-text p {
+        color: #c52260;
+
+    }
+    .navbar-nav {
+        display: flex;
+        text-align: center;
+       
+    }
+    .navbar-nav a{
+        color: #c52260;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-nav .cta {
+        background-color: #c52260;
+       
+      padding-bottom: 12px;
+        color: #ca839e;
+        border-radius: 12px;
+
+    }
+    .home {
+        padding-top: 20px;
+        text-align: center;
+        color: #c52260;
+        padding: 230px;
+
+    }
+    .about .content h2 {
+        color: #c52260;
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+
+    }
+    .content p {
+       color: #c52260;
+       text-align: center; 
+       padding-bottom: 230px;
+    }
+
+    .layanan .content h2 {
+        color: #c52260;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 30px;
+    }
+
+    .contact .content h2{
+color:#c52260;
+text-align: center;   
+font-size: 30px;
+    }
+
+    footer {
+        background-color: #c52260;
+        color: #ca839e;
+    }
+    footer a{
+        color: #ca839e;
+        font-size: 18px;
+    }
+    form {
+        background-color: #c52260;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        text-align: center;
+        margin: 20px 20px;
+    }
+    form label {
+         color: #ca839e;
+    }
+    form input {
+        color: #c52260;
+    }
+    textarea {
+        color: #ca839e;
+
+    }
+    .search-box {
+      background-color: #c52260;
+      margin: px;
+      border-radius: 20px;
+
+      padding-top:12px ;
+      text-align: center;
+      display: flex;
+
+    }
+    .form-group {
+color: #ffffff;
+text-align: justify;
+    }
+      
+    
+
+   </style>
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      
+        <div class="logo-text">
+          <h1>
+            SalonCantik<span><em>Rissa</em></span>
+          </h1>
+          <p>Tagline Website Anda</p>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="navbar-nav">
+          <a href="#home">Beranda</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#layanan">Layanan</a>
+          <a href="#contact">Kontak</a>
+          <a href="#contact" class="cta">reservasi</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section home -->
+    <section class="home" id="home">
+      <div class="content">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit
+          molestias beatae. Aut atque quod alias debitis.
+        </p>
+      </div>
+    </section>
+    <section id="search">
+      <div class="search-box reveal">
+        <h3><i class="fas fa-search"></i>Cari Kendaraan</h3>
+        <div class="search-grid">
+          <div class="form-group">
+            <label>Lokasi Rental</label>
+            <div class="input-wrap">
+              <select>
+                <option value="">Pilih Kota</option>
+                <option>Yogyakarta</option>
+                <option>Bali</option>
+                <option>Surabaya</option>
+                <option>Bandung</option>
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Tipe Kendaraan</label>
+            <div class="input-wrap">
+              <select>
+                <option value="">Semua Tipe</option>
+                <option>SUV</option>
+                <option>MPV</option>
+                <option>Sedan</option>
+                <option>City Car</option>
+                <option>Pick Up</option>
+              </select>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Tanggal Mulai</label>
+            <input type="date" />
+          </div>
+          <div class="form-group">
+            <label>Tanggal Selesai</label>
+            <input type="date" />
+          </div>
+          <div class="form-group">
+            <label class="text"></label>
+            <button class="search-btn">
+              <i class="fas fa-search"></i> Cari Sekarang
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero section about-->
+    <section class="about" id="about">
+      <div class="content">
+        <h2>Tentang Kami</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a
+          perspiciatis, laboriosam reiciendis deserunt molestiae omnis.
+        </p>
+      </div>
+    </section>
+
+    <!-- hero section layanan -->
+    <section class="layanan" id="layanan">
+      <div class="content">
+        <h2>Layanan</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          molestiae laborum dignissimos.
+        </p>
+      </div>
+    </section>
+
+    <!-- hero section kontak -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <h2>Kontak</h2>
+        <p>Email: contoh@email.com</p>
+        <p>WhatsApp: 08xxxxxxxxxx</p>
+      </div>
+      <form action="/submit" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name " name="name" required /><br /><br />
+      <label for="email">email</label>
+      <input type="text" id="email" name="email" required /><br /><br />
+      <label for="message">Message</label>
+      <textarea
+        name="message"
+        id="message"
+        rows="4"
+        cols="58"
+        required
+      ></textarea>
+      <input type="submit" value="submit" />
+    </section>
+
+    <!-- footer-->
+    <footer>
+      <div class="footer">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <p>© Risma sari 2026</p>
+    </footer>
+  </body>
+</html>
